@@ -1,0 +1,20 @@
+{
+  "name": "modern-web-tools",
+  "version": "1.0.0",
+  "description": "modern web tools",
+  "main": "index.js",
+  "scripts": {
+    "init": "node common/scripts/install-run-rush install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardfist/modern-web-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardfist/modern-web-tools/issues"
+  },
+  "homepage": "https://github.com/hardfist/modern-web-tools#readme"
+}
