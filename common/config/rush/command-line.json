@@ -16,6 +16,13 @@
       "allowWarningsInSuccessfulBuild": true,
       "ignoreMissingScript": true,
       "enableParallelism": true
+    },
+    {
+      "commandKind": "bulk",
+      "name": "rebuild",
+      "allowWarningsInSuccessfulBuild": true,
+      "ignoreMissingScript": true,
+      "enableParallelism": true
     }
     // {
     //   /**
