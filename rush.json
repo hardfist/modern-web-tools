@@ -367,6 +367,10 @@
     {
       "packageName": "@hardfist/compiler",
       "projectFolder": "tools/compiler"
+    },
+    {
+      "packageName": "vue-app",
+      "projectFolder": "apps/vue-app"
     }
     // {
     //   /**
