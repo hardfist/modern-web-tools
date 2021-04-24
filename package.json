@@ -4,7 +4,8 @@
   "description": "modern web tools",
   "main": "index.js",
   "scripts": {
-    "init": "node common/scripts/install-run-rush install"
+    "init": "node common/scripts/install-run-rush install",
+    "build": "node common/scripts/install-run-rush build --verbose"
   },
   "repository": {
     "type": "git",
