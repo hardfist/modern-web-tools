@@ -19,6 +19,11 @@ importers:
       react-dom: ^17.0.0
       typescript: ^4.1.2
       vite: ^2.1.5
+  ../../tools/compiler:
+    dependencies:
+      esbuild: 0.11.13
+    specifiers:
+      esbuild: ~0.11.13
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.13:
@@ -329,6 +334,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-B6zLTxxaOFP4WZm6DrvgRk8kLFYWNhQ5TrHMC0l5WtkMXhU5UbnvWoTfeEwqOruUSlNMhVLfYak7REX6oC5Yfw==
+  /esbuild/0.11.13:
+    dev: false
+    hasBin: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-d5coY4dd4rVWle0WzrR8+32ukKtZroVJ/wJzOwbBEmoSFB/H3QME0l+3IAN5Sf3LtuoUSivdv1/b5rD7OykXeg==
   /esbuild/0.9.7:
     dev: true
     hasBin: true

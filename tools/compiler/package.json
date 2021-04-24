@@ -1,0 +1,16 @@
+{
+  "name": "@hardfist/compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --outfile=lib/index.js  --format=cjs",
+    "start": "node lib/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "~0.11.13"
+  }
+}
