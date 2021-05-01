@@ -2,10 +2,13 @@
   "name": "core-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/cli.d.ts",
   "scripts": {
-    "start": "node lib/cli.js",
-    "build": "heft build --clean",
+    "start": "node lib/index.js",
+    "watch": "npm run build -- --watch",
+    "build": "esbuild src/cli.ts --format=cjs --bundle --platform=node --outfile=lib/index.js",
+    "compile": "heft build --clean",
     "clean": "heft clean",
     "test": "heft test --clean"
   },
@@ -20,6 +23,8 @@
     "typescript": "^4.1.2",
     "@types/heft-jest": "~1.0.2",
     "eslint": "~7.25.0",
-    "@rushstack/eslint-config": "~2.3.4"
+    "@rushstack/eslint-config": "~2.3.4",
+    "@octokit/rest": "~18.5.3",
+    "esbuild": "~0.11.13"
   }
 }
