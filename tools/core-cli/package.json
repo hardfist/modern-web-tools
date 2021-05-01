@@ -1,0 +1,21 @@
+{
+  "name": "core-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/cli.js",
+    "build": "heft build --clean",
+    "clean": "heft clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rushstack/node-core-library": "~3.36.2",
+    "@rushstack/ts-command-line": "~4.7.10",
+    "@rushstack/heft": "~0.30.1",
+    "@types/node": "~15.0.1",
+    "typescript": "^4.1.2"
+  }
+}

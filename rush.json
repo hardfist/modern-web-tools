@@ -375,6 +375,10 @@
     {
       "packageName": "blog",
       "projectFolder": "apps/blog"
+    },
+    {
+      "packageName": "core-cli",
+      "projectFolder": "tools/core-cli"
     }
     // {
     //   /**
