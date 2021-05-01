@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node lib/cli.js",
     "build": "heft build --clean",
-    "clean": "heft clean"
+    "clean": "heft clean",
+    "test": "heft test --clean"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,9 @@
     "@rushstack/ts-command-line": "~4.7.10",
     "@rushstack/heft": "~0.30.1",
     "@types/node": "~15.0.1",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "@types/heft-jest": "~1.0.2",
+    "eslint": "~7.25.0",
+    "@rushstack/eslint-config": "~2.3.4"
   }
 }

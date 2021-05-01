@@ -19,3 +19,5 @@ export class CoreCommandLine extends CommandLineParser {
     console.log('exec', this._verbose);
   }
 }
+
+export function f() {}
