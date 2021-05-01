@@ -4,8 +4,11 @@
   "description": "modern web tools",
   "main": "index.js",
   "scripts": {
-    "init": "node common/scripts/install-run-rush install",
-    "build": "node common/scripts/install-run-rush build --verbose"
+    "checkEnv": "echo ${deploy_package}",
+    "init:all": "node common/scripts/install-run-rush install",
+    "build:all": "node common/scripts/install-run-rush build --verbose",
+    "init": "node common/scripts/install-run-rush install --to ${PKG}",
+    "build": "node common/scripts/install-run-rush build --to ${PKG} --verbose"
   },
   "repository": {
     "type": "git",
