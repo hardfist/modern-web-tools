@@ -8,9 +8,11 @@ importers:
       vitepress: ~0.13.2
   ../../apps/nest-app:
     dependencies:
+      '@hardfist/utils': link:../../library/utils
       '@nestjs/common': 7.6.15_8e6d4b7501d9d25f42cbf34563d4f5bc
       '@nestjs/core': 7.6.15_19fd72ad6e93e20796310d8f58ce21b0
       '@nestjs/platform-express': 7.6.15_a5e284bf185e3b13e505d42d771fb371
+      '@rushstack/heft': 0.30.1
       reflect-metadata: 0.1.13
       rimraf: 3.0.2
       rxjs: 6.6.7
@@ -36,12 +38,14 @@ importers:
       tsconfig-paths: 3.9.0
       typescript: 4.2.4
     specifiers:
+      '@hardfist/utils': workspace:*
       '@nestjs/cli': ^7.6.0
       '@nestjs/common': ^7.6.15
       '@nestjs/core': ^7.6.15
       '@nestjs/platform-express': ^7.6.15
       '@nestjs/schematics': ^7.3.0
       '@nestjs/testing': ^7.6.15
+      '@rushstack/heft': ~0.30.1
       '@types/express': ^4.17.11
       '@types/jest': ^26.0.22
       '@types/node': ~15.0.1
@@ -4302,7 +4306,7 @@ packages:
       integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
   /axios/0.21.1:
     dependencies:
-      follow-redirects: 1.14.0_debug@4.3.1
+      follow-redirects: 1.14.0
     dev: false
     resolution:
       integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
@@ -7054,6 +7058,17 @@ packages:
       react: ^15.0.2 || ^16.0.0 || ^17.0.0
     resolution:
       integrity: sha512-emk4RCvJ8RzNP2lNpphKnG7r18q8elDYNAPx7xn+bDeOIo9FFfxEfIQ2y6YbQNmnsGD3nH1noxtLE64Puz1bRQ==
+  /follow-redirects/1.14.0:
+    dev: false
+    engines:
+      node: '>=4.0'
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    resolution:
+      integrity: sha512-0vRwd7RKQBTt+mgu87mtYeofLFZpTas2S9zY+jIeuLJMNvudIgF52nr19q40HOwH5RrhWIPuj9puybzSJiRrVg==
   /follow-redirects/1.14.0_debug@4.3.1:
     dependencies:
       debug: 4.3.1_supports-color@6.1.0
