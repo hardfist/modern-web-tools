@@ -11,6 +11,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "@hardfist/utils",
+      "allowedCategories": [ "apps" ]
+    },
+    {
       "name": "@mdx-js/react",
       "allowedCategories": [ "apps" ]
     },
@@ -48,7 +52,7 @@
     },
     {
       "name": "@rushstack/heft",
-      "allowedCategories": [ "tools" ]
+      "allowedCategories": [ "apps", "tools" ]
     },
     {
       "name": "@rushstack/node-core-library",
