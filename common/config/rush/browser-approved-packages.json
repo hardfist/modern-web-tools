@@ -52,7 +52,7 @@
     },
     {
       "name": "@rushstack/heft",
-      "allowedCategories": [ "apps", "tools" ]
+      "allowedCategories": [ "apps", "library", "tools" ]
     },
     {
       "name": "@rushstack/node-core-library",

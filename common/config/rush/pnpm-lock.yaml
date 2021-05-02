@@ -123,8 +123,10 @@ importers:
       url-loader: ^4.1.1
   ../../library/utils:
     dependencies:
+      '@rushstack/heft': 0.30.1
       typescript: 4.2.4
     specifiers:
+      '@rushstack/heft': ~0.30.1
       typescript: ^4.1.2
   ../../tools/compiler:
     dependencies:
@@ -7069,19 +7071,6 @@ packages:
         optional: true
     resolution:
       integrity: sha512-0vRwd7RKQBTt+mgu87mtYeofLFZpTas2S9zY+jIeuLJMNvudIgF52nr19q40HOwH5RrhWIPuj9puybzSJiRrVg==
-  /follow-redirects/1.14.0_debug@4.3.1:
-    dependencies:
-      debug: 4.3.1_supports-color@6.1.0
-    dev: false
-    engines:
-      node: '>=4.0'
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    resolution:
-      integrity: sha512-0vRwd7RKQBTt+mgu87mtYeofLFZpTas2S9zY+jIeuLJMNvudIgF52nr19q40HOwH5RrhWIPuj9puybzSJiRrVg==
   /for-in/1.0.2:
     engines:
       node: '>=0.10.0'
@@ -7909,7 +7898,7 @@ packages:
   /http-proxy/1.18.1_debug@4.3.1:
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.0_debug@4.3.1
+      follow-redirects: 1.14.0
       requires-port: 1.0.0
     dev: false
     engines:
