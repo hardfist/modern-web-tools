@@ -1,0 +1,210 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@docusaurus/core",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@docusaurus/preset-classic",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@mdx-js/react",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@nestjs/cli",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@nestjs/common",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@nestjs/core",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@nestjs/platform-express",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@nestjs/schematics",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@nestjs/testing",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@octokit/rest",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@rushstack/eslint-config",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@rushstack/heft",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@rushstack/node-core-library",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@rushstack/ts-command-line",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@svgr/webpack",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@types/express",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@types/heft-jest",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "@types/jest",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@types/node",
+      "allowedCategories": [ "apps", "tools" ]
+    },
+    {
+      "name": "@types/react",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@types/react-dom",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@types/supertest",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@vitejs/plugin-react-refresh",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@vitejs/plugin-vue",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "@vue/compiler-sfc",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "clsx",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "esbuild",
+      "allowedCategories": [ "apps", "tools" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "apps", "tools" ]
+    },
+    {
+      "name": "eslint-config-prettier",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "eslint-plugin-prettier",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "file-loader",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "prettier",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "react",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "reflect-metadata",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "rimraf",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "rxjs",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "supertest",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "ts-jest",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "ts-loader",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "ts-node",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "tsconfig-paths",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "apps", "library", "tools" ]
+    },
+    {
+      "name": "url-loader",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "vite",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "vitepress",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "vue",
+      "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "vue-tsc",
+      "allowedCategories": [ "apps" ]
+    }
+  ]
+}
