@@ -31,7 +31,14 @@
       "safeForSimultaneousRushProcesses": true,
       "autoinstallerName": "rush-prettier",
       "shellCommand": "pretty-quick --staged"
-    }
+    },
+    {
+      "name": "import-strings",
+      "commandKind": "bulk",
+      "summary": "bulk",
+      "safeForSimultaneousRushProcesses": true,
+      "enableParallelism": true
+    },
     // {
     //   /**
     //    * (Required) Determines the type of custom command.
