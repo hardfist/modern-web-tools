@@ -61,6 +61,11 @@ importers:
       react: ^17.0.0
       react-dom: ^17.0.0
       url-loader: ^4.1.1
+  ../../library/utils:
+    dependencies:
+      typescript: 4.2.4
+    specifiers:
+      typescript: ^4.1.2
   ../../tools/compiler:
     dependencies:
       esbuild: 0.11.13

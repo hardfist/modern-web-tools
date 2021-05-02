@@ -184,6 +184,9 @@
    * The approvals are tracked in two config files "browser-approved-packages.json"
    * and "nonbrowser-approved-packages.json".  See the Rush documentation for details.
    */
+  "approvedPackagesPolicy": {
+    "reviewCategories": ["production", "tools", "prototypes", "apps", "library"]
+  },
   // "approvedPackagesPolicy": {
   //   /**
   //    * The review categories allow you to say for example "This library is approved for usage
@@ -271,7 +274,9 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    "url": "https://github.com/hardfist/modern-web-tools"
+    "url": "https://github.com/hardfist/modern-web-tools",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
@@ -362,27 +367,38 @@
   "projects": [
     {
       "packageName": "react-app",
-      "projectFolder": "apps/react-app"
+      "projectFolder": "apps/react-app",
+      "reviewCategory": "apps"
     },
     {
       "packageName": "@hardfist/compiler",
-      "projectFolder": "tools/compiler"
+      "projectFolder": "tools/compiler",
+      "reviewCategory": "apps"
     },
     {
       "packageName": "vue-app",
-      "projectFolder": "apps/vue-app"
+      "projectFolder": "apps/vue-app",
+      "reviewCategory": "apps"
     },
     {
       "packageName": "blog",
-      "projectFolder": "apps/blog"
+      "projectFolder": "apps/blog",
+      "reviewCategory": "apps"
     },
     {
       "packageName": "core-cli",
-      "projectFolder": "tools/core-cli"
+      "projectFolder": "tools/core-cli",
+      "reviewCategory": "tools"
     },
     {
       "packageName": "website",
-      "projectFolder": "apps/website"
+      "projectFolder": "apps/website",
+      "reviewCategory": "apps"
+    },
+    {
+      "packageName": "utils",
+      "projectFolder": "library/utils",
+      "reviewCategory": "library"
     }
     // {
     //   /**
