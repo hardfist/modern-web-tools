@@ -399,6 +399,11 @@
       "packageName": "@hardfist/utils",
       "projectFolder": "library/utils",
       "reviewCategory": "library"
+    },
+    {
+      "packageName": "nest-app",
+      "projectFolder": "apps/nest-app",
+      "reviewCategory": "apps"
     }
     // {
     //   /**
