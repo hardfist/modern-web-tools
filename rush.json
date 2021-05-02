@@ -396,7 +396,7 @@
       "reviewCategory": "apps"
     },
     {
-      "packageName": "utils",
+      "packageName": "@hardfist/utils",
       "projectFolder": "library/utils",
       "reviewCategory": "library"
     }
