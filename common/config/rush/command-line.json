@@ -12,6 +12,14 @@
   "commands": [
     {
       "commandKind": "bulk",
+      "name": "build:watch",
+      "summary": "build:watch something",
+      "incremental": true,
+      "enableParallelism": true,
+      "watchForChanges": true
+    },
+    {
+      "commandKind": "bulk",
       "name": "build",
       "allowWarningsInSuccessfulBuild": true,
       "ignoreMissingScript": true,

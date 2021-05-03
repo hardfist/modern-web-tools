@@ -6,6 +6,7 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "heft build",
+    "build:watch": "heft build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
