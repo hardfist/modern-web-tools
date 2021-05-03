@@ -27,7 +27,6 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.6",
-    "@hardfist/utils": "workspace:*",
     "@rushstack/heft": "~0.30.1"
   },
   "devDependencies": {
