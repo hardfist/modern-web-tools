@@ -135,6 +135,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "fastify",
+      "allowedCategories": [ "apps" ]
+    },
+    {
       "name": "file-loader",
       "allowedCategories": [ "apps" ]
     },
