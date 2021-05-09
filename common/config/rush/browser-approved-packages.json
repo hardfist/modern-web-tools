@@ -3,6 +3,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@ampproject/remapping",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "@babel/core",
       "allowedCategories": [ "examples" ]
     },
@@ -84,7 +88,7 @@
     },
     {
       "name": "@types/node",
-      "allowedCategories": [ "apps", "tools" ]
+      "allowedCategories": [ "apps", "examples", "tools" ]
     },
     {
       "name": "@types/react",
@@ -124,7 +128,7 @@
     },
     {
       "name": "esbuild",
-      "allowedCategories": [ "apps", "tools" ]
+      "allowedCategories": [ "apps", "examples", "tools" ]
     },
     {
       "name": "eslint",
@@ -155,6 +159,10 @@
       "allowedCategories": [ "examples" ]
     },
     {
+      "name": "mocha",
+      "allowedCategories": [ "apps" ]
+    },
+    {
       "name": "prettier",
       "allowedCategories": [ "apps" ]
     },
@@ -181,6 +189,10 @@
     {
       "name": "rxjs",
       "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "source-map",
+      "allowedCategories": [ "examples" ]
     },
     {
       "name": "sourcemap",
@@ -221,6 +233,10 @@
     {
       "name": "vitepress",
       "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "vlq",
+      "allowedCategories": [ "examples" ]
     },
     {
       "name": "vue",
