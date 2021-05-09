@@ -1,6 +1,7 @@
 import esbuild from 'esbuild';
 import path, { resolve } from 'path';
 import fs from 'fs';
+import terser from 'terser';
 import { fileURLToPath } from 'url';
 import { SourceMapConsumer } from 'source-map';
 import vlq from 'vlq';

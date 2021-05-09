@@ -203,6 +203,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "terser",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "ts-jest",
       "allowedCategories": [ "apps" ]
     },

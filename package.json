@@ -8,7 +8,7 @@
     "init:all": "node common/scripts/install-run-rush install",
     "build:all": "node common/scripts/install-run-rush build --verbose",
     "init": "node common/scripts/install-run-rush install --to ${PKG}",
-    "build": "node common/scripts/install-run-rush build --to ${PKG} --verbose"
+    "build": "rush check && node common/scripts/install-run-rush build --to ${PKG} --verbose"
   },
   "repository": {
     "type": "git",
