@@ -185,7 +185,7 @@
    * and "nonbrowser-approved-packages.json".  See the Rush documentation for details.
    */
   "approvedPackagesPolicy": {
-    "reviewCategories": ["production", "tools", "prototypes", "apps", "library"]
+    "reviewCategories": ["production", "tools", "prototypes", "apps", "library", "examples"]
   },
   // "approvedPackagesPolicy": {
   //   /**
@@ -404,6 +404,11 @@
       "packageName": "fastify-app",
       "projectFolder": "apps/fastify-app",
       "reviewCategory": "apps"
+    },
+    {
+      "packageName": "@hardfist/sourcemap",
+      "projectFolder": "examples/sourcemap",
+      "reviewCategory": "examples"
     }
     // {
     //   /**

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild src/index.ts --outfile=lib/index.js  --format=cjs",
+    "build": "esbuild src/index.ts --outfile=lib/index.js  --format=cjs --log-level=error",
     "start": "node lib/index.js"
   },
   "keywords": [],

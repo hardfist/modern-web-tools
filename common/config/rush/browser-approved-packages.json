@@ -3,6 +3,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@babel/core",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "@docusaurus/core",
       "allowedCategories": [ "apps" ]
     },
@@ -52,7 +56,7 @@
     },
     {
       "name": "@rushstack/heft",
-      "allowedCategories": [ "apps", "library", "tools" ]
+      "allowedCategories": [ "apps", "examples", "library", "tools" ]
     },
     {
       "name": "@rushstack/node-core-library",
@@ -147,6 +151,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "lodash",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "prettier",
       "allowedCategories": [ "apps" ]
     },
@@ -167,8 +175,16 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "rollup",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "rxjs",
       "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "sourcemap",
+      "allowedCategories": [ "examples" ]
     },
     {
       "name": "supertest",
@@ -192,7 +208,7 @@
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "apps", "library", "tools" ]
+      "allowedCategories": [ "apps", "examples", "library", "tools" ]
     },
     {
       "name": "url-loader",
