@@ -1,0 +1,14 @@
+{
+  "name": "wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:hello": "emcc hello.cpp -o hello.wasm  -O3",
+    "build": "emcc add.c -O3 -o add.wasm --no-entry",
+    "start:wasi": " node --experimental-wasi-unstable-preview1 wasi.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
