@@ -1,0 +1,13 @@
+{
+  "name": "jscall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:side": "emcc main.cc  -O3 -s SIDE_MODULE=2 -o main.wasm --no-entry -s EXPORTED_FUNCTIONS=['_add']",
+    "build": "emcc main.cc --js-library mergeinto.js -o main.js --no-entry -s EXTRA_EXPORTED_RUNTIME_METHODS=['ccall','UTF8ToString'] -s EXPORTED_FUNCTIONS=['_add','_main'] "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
