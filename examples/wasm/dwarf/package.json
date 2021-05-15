@@ -6,6 +6,7 @@
   "scripts": {
     "start": "serve",
     "build": "emcc -g  main.cc -o main.html",
+    "build:debug": "emcc -g main.cc -o main.html -gseparate-dwarf=main.debug.wasm",
     "build:complex": "emcc -s ALLOW_MEMORY_GROWTH=1 -s USE_SDL=2 -g complex.cc -o complex.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

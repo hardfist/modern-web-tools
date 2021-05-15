@@ -7,7 +7,7 @@
     "standalone": "emcc hello_world.c -Os -s WASM=1 -s SIDE_MODULE=1 -o hello_world.wasm",
     "build:hello": "emcc hello.cpp -o hello.wasm  -O3",
     "build:side_module": "emcc side_module.c -s SIDE_MODULE=2 -O1 -o side_module.wasm -s EXPORTED_FUNCTIONS=['_Increment']",
-    "build": "emcc add.c -O3 -o add.wasm --no-entry",
+    "build": "emcc add.c -O3 -o add.wasm -s SIDE_MODULE=1",
     "start:wasi": " node --experimental-wasi-unstable-preview1 wasi.js"
   },
   "keywords": [],
