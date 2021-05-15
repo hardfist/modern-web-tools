@@ -1,0 +1,13 @@
+{
+  "name": "llvm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "clang --target=wasm32 -nostdlib -Wl,--no-entry -Wl,--export-all -o add2.wasm add.c",
+    "build": "clang --target=wasm32 -emit-llvm -c -S add.c",
+    "llc": "llc -march=wasm32 -filetype=obj add.ll"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
