@@ -7,6 +7,10 @@
       "allowedCategories": [ "examples" ]
     },
     {
+      "name": "@babel/code-frame",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "@babel/core",
       "allowedCategories": [ "examples" ]
     },
