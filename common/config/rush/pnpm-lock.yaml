@@ -99,16 +99,24 @@ importers:
       vlq: ~1.0.1
   ../../examples/sourcemap-blog:
     dependencies:
+      '@babel/code-frame': 7.12.13
       '@vue/compiler-sfc': 3.0.11_vue@3.0.11
       rollup: 2.47.0
       rollup-plugin-vue: 6.0.0_@vue+compiler-sfc@3.0.11
+      source-map: 0.7.3
       terser: 5.7.0
+      typescript: 4.2.4
+      vlq: 1.0.1
       vue: 3.0.11
     specifiers:
+      '@babel/code-frame': ~7.12.13
       '@vue/compiler-sfc': ^3.0.5
       rollup: ~2.47.0
       rollup-plugin-vue: ~6.0.0
+      source-map: ~0.7.3
       terser: ~5.7.0
+      typescript: ^4.1.2
+      vlq: ~1.0.1
       vue: ^3.0.5
   ../../library/utils:
     dependencies:
@@ -553,7 +561,7 @@ packages:
       integrity: sha512-+ufuXprtQ1D1iZTO/K9+EBRn+qPWMJjZSw/S0KlFrxCw4tkrzv9grgpDHkY9MeQTjTY8i2sp7Jep8DfU6tN9Mg==
   /@babel/highlight/7.13.10:
     dependencies:
-      '@babel/helper-validator-identifier': 7.12.11
+      '@babel/helper-validator-identifier': 7.14.0
       chalk: 2.4.2
       js-tokens: 4.0.0
     resolution:
