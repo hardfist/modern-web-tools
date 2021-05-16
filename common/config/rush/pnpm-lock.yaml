@@ -97,6 +97,19 @@ importers:
       terser: ~5.7.0
       typescript: ^4.1.2
       vlq: ~1.0.1
+  ../../examples/sourcemap-blog:
+    dependencies:
+      '@vue/compiler-sfc': 3.0.11_vue@3.0.11
+      rollup: 2.47.0
+      rollup-plugin-vue: 6.0.0_@vue+compiler-sfc@3.0.11
+      terser: 5.7.0
+      vue: 3.0.11
+    specifiers:
+      '@vue/compiler-sfc': ^3.0.5
+      rollup: ~2.47.0
+      rollup-plugin-vue: ~6.0.0
+      terser: ~5.7.0
+      vue: ^3.0.5
   ../../library/utils:
     dependencies:
       typescript: 4.2.4
@@ -5177,6 +5190,10 @@ packages:
       node: '>=4.0'
     resolution:
       integrity: sha512-BxbNGGNm0RyRYvUdHpIwv9IWzeM9XClbOxwoATuFdOE7ZE6wHL+HQ5T8hoPM+zHvmKzzsEqhgy0GrQ5X13afiQ==
+  /estree-walker/0.6.1:
+    dev: false
+    resolution:
+      integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==
   /estree-walker/2.0.2:
     resolution:
       integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
@@ -9683,6 +9700,23 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
+  /rollup-plugin-vue/6.0.0_@vue+compiler-sfc@3.0.11:
+    dependencies:
+      '@vue/compiler-sfc': 3.0.11_vue@3.0.11
+      debug: 4.3.1
+      hash-sum: 2.0.0
+      rollup-pluginutils: 2.8.2
+    dev: false
+    peerDependencies:
+      '@vue/compiler-sfc': '*'
+    resolution:
+      integrity: sha512-oVvUd84d5u73M2HYM3XsMDLtZRIA/tw2U0dmHlXU2UWP5JARYHzh/U9vcxaN/x/9MrepY7VH3pHFeOhrWpxs/Q==
+  /rollup-pluginutils/2.8.2:
+    dependencies:
+      estree-walker: 0.6.1
+    dev: false
+    resolution:
+      integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
   /rollup/2.47.0:
     engines:
       node: '>=10.0.0'

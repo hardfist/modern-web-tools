@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["fixtures/HelloWorld.vue"],"sourcesContent":["<script>\nconsole.log('hello world');\nexport default {\n  props: ['name'],\n}\n</script>\n\n<template>\n  <div>Hello {{ name }}!</div>\n</template>"],"names":[],"mappings":";;AACA,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC;AAC1B,aAAe;EACb,KAAK,EAAE,CAAC,MAAM,CAAC;AACjB;;;;;;;;;;;"}

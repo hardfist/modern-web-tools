@@ -120,7 +120,7 @@
     },
     {
       "name": "@vue/compiler-sfc",
-      "allowedCategories": [ "apps" ]
+      "allowedCategories": [ "apps", "examples" ]
     },
     {
       "name": "clsx",
@@ -187,6 +187,10 @@
       "allowedCategories": [ "examples" ]
     },
     {
+      "name": "rollup-plugin-vue",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "rxjs",
       "allowedCategories": [ "apps" ]
     },
@@ -244,7 +248,7 @@
     },
     {
       "name": "vue",
-      "allowedCategories": [ "apps" ]
+      "allowedCategories": [ "apps", "examples" ]
     },
     {
       "name": "vue-tsc",
