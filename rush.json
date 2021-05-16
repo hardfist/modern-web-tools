@@ -409,6 +409,11 @@
       "packageName": "@hardfist/sourcemap",
       "projectFolder": "examples/sourcemap",
       "reviewCategory": "examples"
+    },
+    {
+      "packageName": "sourcemap-blog",
+      "projectFolder": "examples/sourcemap-blog",
+      "reviewCategory": "examples"
     }
     // {
     //   /**
