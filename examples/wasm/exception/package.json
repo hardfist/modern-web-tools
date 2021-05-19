@@ -1,0 +1,12 @@
+{
+  "name": "exception",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "emcc -O3 -s MODULARIZE=1 exce.cc -o exce.wasm --no-entry --bind -o exce.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
