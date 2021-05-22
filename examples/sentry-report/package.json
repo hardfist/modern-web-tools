@@ -1,0 +1,17 @@
+{
+  "name": "sentry-report",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~4.2.4",
+    "vite": "^2.1.5"
+  },
+  "dependencies": {
+    "@sentry/tracing": "~6.4.1",
+    "@sentry/browser": "~6.4.1"
+  }
+}
