@@ -411,6 +411,11 @@
       "packageName": "sourcemap-blog",
       "projectFolder": "examples/sourcemap-blog",
       "reviewCategory": "examples"
+    },
+    {
+      "packageName": "sentry-report",
+      "projectFolder": "examples/sentry-report",
+      "reviewCategory": "examples"
     }
     // {
     //   /**

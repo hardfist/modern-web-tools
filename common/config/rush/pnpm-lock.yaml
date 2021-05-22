@@ -16,7 +16,7 @@ importers:
       '@hardfist/utils': workspace:*
       '@types/node': ~15.0.1
       fastify: ~3.15.1
-      typescript: ^4.1.2
+      typescript: ~4.2.4
   ../../apps/react-app:
     dependencies:
       react: 17.0.2
@@ -33,7 +33,7 @@ importers:
       '@vitejs/plugin-react-refresh': ^1.3.1
       react: ^17.0.0
       react-dom: ^17.0.0
-      typescript: ^4.1.2
+      typescript: ~4.2.4
       vite: ^2.1.5
   ../../apps/vue-app:
     dependencies:
@@ -47,7 +47,7 @@ importers:
     specifiers:
       '@vitejs/plugin-vue': ^1.2.1
       '@vue/compiler-sfc': ^3.0.5
-      typescript: ^4.1.2
+      typescript: ~4.2.4
       vite: ^2.1.5
       vue: ^3.0.5
       vue-tsc: ^0.0.24
@@ -74,6 +74,18 @@ importers:
       react: ^17.0.0
       react-dom: ^17.0.0
       url-loader: ^4.1.1
+  ../../examples/sentry-report:
+    dependencies:
+      '@sentry/browser': 6.4.1
+      '@sentry/tracing': 6.4.1
+    devDependencies:
+      typescript: 4.2.4
+      vite: 2.2.1
+    specifiers:
+      '@sentry/browser': ~6.4.1
+      '@sentry/tracing': ~6.4.1
+      typescript: ~4.2.4
+      vite: ^2.1.5
   ../../examples/sourcemap:
     dependencies:
       '@ampproject/remapping': 1.0.1
@@ -95,7 +107,7 @@ importers:
       rollup: ~2.47.0
       source-map: ~0.7.3
       terser: ~5.7.0
-      typescript: ^4.1.2
+      typescript: ~4.2.4
       vlq: ~1.0.1
   ../../examples/sourcemap-blog:
     dependencies:
@@ -115,14 +127,14 @@ importers:
       rollup-plugin-vue: ~6.0.0
       source-map: ~0.7.3
       terser: ~5.7.0
-      typescript: ^4.1.2
+      typescript: ~4.2.4
       vlq: ~1.0.1
       vue: ^3.0.5
   ../../library/utils:
     dependencies:
       typescript: 4.2.4
     specifiers:
-      typescript: ^4.1.2
+      typescript: ~4.2.4
   ../../tools/compiler:
     dependencies:
       esbuild: 0.11.13
@@ -148,7 +160,7 @@ importers:
       '@types/node': ~15.0.1
       esbuild: ~0.11.13
       eslint: ~7.25.0
-      typescript: ^4.1.2
+      typescript: ~4.2.4
 lockfileVersion: 5.2
 packages:
   /@algolia/autocomplete-core/1.0.0-alpha.44:
@@ -2327,6 +2339,76 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8t042g8eerypNOEcdpxwRA3uCmz0duMo21rG4Z2mdz7JxJeylDmzjlU3wDdef2t3P1Z61JCdZB6fbm1Mh0zi7w==
+  /@sentry/browser/6.4.1:
+    dependencies:
+      '@sentry/core': 6.4.1
+      '@sentry/types': 6.4.1
+      '@sentry/utils': 6.4.1
+      tslib: 1.14.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-3cDud6GWutnJqcnheIq0lPNTsUJbrRLevQ+g1YfawVXFUxfmmY2bOsGd/Mxq17LxYeBHgKTitXv3DU1bsQ+WBQ==
+  /@sentry/core/6.4.1:
+    dependencies:
+      '@sentry/hub': 6.4.1
+      '@sentry/minimal': 6.4.1
+      '@sentry/types': 6.4.1
+      '@sentry/utils': 6.4.1
+      tslib: 1.14.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-Lx13oTiP+Tjvm5VxulcCszNVd2S1wY4viSnr+ygq62ySVERR+t7uOZDSARZ0rZ259GwW6nkbMh9dDmD0d6VCGQ==
+  /@sentry/hub/6.4.1:
+    dependencies:
+      '@sentry/types': 6.4.1
+      '@sentry/utils': 6.4.1
+      tslib: 1.14.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-7IZRP5buDE6s/c3vWzzPR/ySE+8GUuHPgTEPiDCPOCWwUN11zXDafJDKkJqY3muJfebUKmC/JG67RyBx+XlnlQ==
+  /@sentry/minimal/6.4.1:
+    dependencies:
+      '@sentry/hub': 6.4.1
+      '@sentry/types': 6.4.1
+      tslib: 1.14.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-4x/PRbDZACCKJqjta9EkhiIMyGMf7VgBX13EEWEDVWLP7ymFukBuTr4ap/Tz9429kB/yXZuDGGMIZp/G618H3g==
+  /@sentry/tracing/6.4.1:
+    dependencies:
+      '@sentry/hub': 6.4.1
+      '@sentry/minimal': 6.4.1
+      '@sentry/types': 6.4.1
+      '@sentry/utils': 6.4.1
+      tslib: 1.14.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-EPRadE9n/wpUjx4jqP/8vXdOAZBk7vjlzRKniJgKgQUO3v03i0ui6xydaal2mvhplIyOCI2muXdGhjUO7ga4uw==
+  /@sentry/types/6.4.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-sTu/GaLsLYk1AkAqpkMT4+4q665LtZjhV0hkgiTD4N3zPl5uSf1pCIzxPRYjOpe7NEANmWv8U4PaGKGtc2eMfA==
+  /@sentry/utils/6.4.1:
+    dependencies:
+      '@sentry/types': 6.4.1
+      tslib: 1.14.1
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-xJ1uVa5fvg23pXQfulvCIBb9pQ3p1awyd1PapK2AYi+wKjTuYl4B9edmhjRREEQEExznl/d2OVm78fRXLq7M9Q==
   /@sideway/address/4.1.1:
     dependencies:
       '@hapi/hoek': 9.2.0

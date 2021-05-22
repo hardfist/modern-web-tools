@@ -75,6 +75,14 @@
       "allowedCategories": [ "tools" ]
     },
     {
+      "name": "@sentry/browser",
+      "allowedCategories": [ "examples" ]
+    },
+    {
+      "name": "@sentry/tracing",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "@svgr/webpack",
       "allowedCategories": [ "apps" ]
     },
@@ -240,7 +248,7 @@
     },
     {
       "name": "vite",
-      "allowedCategories": [ "apps" ]
+      "allowedCategories": [ "apps", "examples" ]
     },
     {
       "name": "vitepress",
