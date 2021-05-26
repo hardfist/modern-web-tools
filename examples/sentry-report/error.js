@@ -1,3 +1,7 @@
+Error.prepareStackTrace = (error, stackTrace) => {
+  console.log('error:', error, typeof error);
+  console.log('stack:', stackTrace, typeof stackTrace);
+};
 function inner() {
   myUndefinedFunction();
 }
