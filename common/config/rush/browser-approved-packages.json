@@ -187,6 +187,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "recoil",
+      "allowedCategories": [ "apps" ]
+    },
+    {
       "name": "reflect-metadata",
       "allowedCategories": [ "apps" ]
     },
