@@ -11,7 +11,7 @@ Sentry.init({
   tracesSampleRate: 1.0
 });
 function inner() {
-  myUndefinedFunction();
+  let b = a + 1;
 }
 function outer() {
   inner();
