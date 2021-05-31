@@ -1,6 +1,7 @@
-Error.prepareStackTrace = (error, stackTrace) => {
-  console.log('error:', error, typeof error);
-  console.log('stack:', stackTrace, typeof stackTrace);
+Error.prepareStackTrace = (error, structedStackTrace) => {
+  for (const frame of structedStackTrace) {
+    console.log('frame:', frame.getFunctionName(), frame.getLineNumber(), frame.getColumnNumber());
+  }
 };
 function inner() {
   myUndefinedFunction();
