@@ -1,0 +1,1 @@
+{"version":3,"sources":["transformed.js"],"names":["add","a","b"],"mappings":"AAAA,MAAMA,IAAM,SAAUC,EAAGC,GACvB,OAAOD,EAAIC","sourcesContent":["const add = function (a, b) {\n  return a + b;\n};"]}
