@@ -15,6 +15,10 @@
       "allowedCategories": [ "examples" ]
     },
     {
+      "name": "@babel/plugin-transform-arrow-functions",
+      "allowedCategories": [ "examples" ]
+    },
+    {
       "name": "@docusaurus/core",
       "allowedCategories": [ "apps" ]
     },
@@ -168,6 +172,10 @@
     },
     {
       "name": "lodash",
+      "allowedCategories": [ "examples" ]
+    },
+    {
+      "name": "magic-string",
       "allowedCategories": [ "examples" ]
     },
     {

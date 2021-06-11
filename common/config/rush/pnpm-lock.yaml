@@ -92,9 +92,11 @@ importers:
     dependencies:
       '@ampproject/remapping': 1.0.1
       '@babel/core': 7.14.0
+      '@babel/plugin-transform-arrow-functions': 7.14.5_@babel+core@7.14.0
       '@types/node': 15.0.1
       esbuild: 0.11.13
       lodash: 4.17.21
+      magic-string: 0.25.7
       rollup: 2.47.0
       source-map: 0.7.3
       terser: 5.7.0
@@ -103,9 +105,11 @@ importers:
     specifiers:
       '@ampproject/remapping': ~1.0.1
       '@babel/core': ~7.14.0
+      '@babel/plugin-transform-arrow-functions': 7.14.5
       '@types/node': ~15.0.1
       esbuild: ~0.11.13
       lodash: ^4.17.21
+      magic-string: 0.25.7
       rollup: ~2.47.0
       source-map: ~0.7.3
       terser: ~5.7.0
@@ -508,6 +512,12 @@ packages:
   /@babel/helper-plugin-utils/7.13.0:
     resolution:
       integrity: sha512-ZPafIPSwzUlAoWT8DKs1W2VyF2gOWthGd5NGFMsBcMMol+ZhK+EQY/e6V96poa6PA/Bh+C9plWN0hXO1uB8AfQ==
+  /@babel/helper-plugin-utils/7.14.5:
+    dev: false
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-/37qQCE3K0vvZKwoK4XU/irIJQdIfCJuhU5eKnNxpFDsOkgFaUAwbv+RYw6eYgsC0E4hS7r5KqGULUogqui0fQ==
   /@babel/helper-remap-async-to-generator/7.13.0:
     dependencies:
       '@babel/helper-annotate-as-pure': 7.12.13
@@ -935,15 +945,17 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-cHP3u1JiUiG2LFDKbXnwVad81GvfyIOmCD6HIEId6ojrY0Drfy2q1jw7BwN7dE84+kTnBjLkXoL3IEy/3JPu2w==
-  /@babel/plugin-transform-arrow-functions/7.13.0_@babel+core@7.14.0:
+  /@babel/plugin-transform-arrow-functions/7.14.5_@babel+core@7.14.0:
     dependencies:
       '@babel/core': 7.14.0
-      '@babel/helper-plugin-utils': 7.13.0
+      '@babel/helper-plugin-utils': 7.14.5
     dev: false
+    engines:
+      node: '>=6.9.0'
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
-      integrity: sha512-96lgJagobeVmazXFaDrbmCLQxBysKu7U6Do3mLsx27gf5Dk85ezysrs2BZUpXD703U/Su1xTBDxxar2oa4jAGg==
+      integrity: sha512-KOnO0l4+tD5IfOdi4x8C1XmEIRWUjNRV8wc6K2vz/3e8yAOoZZvsRXRRIF/yo/MAOFb4QjtAw9xSxMXbSMRy8A==
   /@babel/plugin-transform-async-to-generator/7.13.0_@babel+core@7.14.0:
     dependencies:
       '@babel/core': 7.14.0
@@ -1386,7 +1398,7 @@ packages:
       '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.14.0
       '@babel/plugin-syntax-private-property-in-object': 7.14.0_@babel+core@7.14.0
       '@babel/plugin-syntax-top-level-await': 7.12.13_@babel+core@7.14.0
-      '@babel/plugin-transform-arrow-functions': 7.13.0_@babel+core@7.14.0
+      '@babel/plugin-transform-arrow-functions': 7.14.5_@babel+core@7.14.0
       '@babel/plugin-transform-async-to-generator': 7.13.0_@babel+core@7.14.0
       '@babel/plugin-transform-block-scoped-functions': 7.12.13_@babel+core@7.14.0
       '@babel/plugin-transform-block-scoping': 7.13.16_@babel+core@7.14.0
