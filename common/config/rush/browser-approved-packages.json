@@ -103,12 +103,16 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "@types/jsdom",
+      "allowedCategories": [ "library" ]
+    },
+    {
       "name": "@types/node",
-      "allowedCategories": [ "apps", "examples", "tools" ]
+      "allowedCategories": [ "apps", "examples", "library", "tools" ]
     },
     {
       "name": "@types/react",
-      "allowedCategories": [ "apps" ]
+      "allowedCategories": [ "apps", "library" ]
     },
     {
       "name": "@types/react-dom",
@@ -139,12 +143,20 @@
       "allowedCategories": [ "apps", "examples" ]
     },
     {
+      "name": "ava",
+      "allowedCategories": [ "library" ]
+    },
+    {
       "name": "clsx",
       "allowedCategories": [ "apps" ]
     },
     {
       "name": "esbuild",
       "allowedCategories": [ "apps", "examples", "tools" ]
+    },
+    {
+      "name": "esbuild-register",
+      "allowedCategories": [ "library" ]
     },
     {
       "name": "eslint",
@@ -171,6 +183,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "jsdom",
+      "allowedCategories": [ "library" ]
+    },
+    {
       "name": "lodash",
       "allowedCategories": [ "examples" ]
     },
@@ -188,7 +204,7 @@
     },
     {
       "name": "react",
-      "allowedCategories": [ "apps" ]
+      "allowedCategories": [ "apps", "library" ]
     },
     {
       "name": "react-dom",
@@ -257,6 +273,10 @@
     {
       "name": "url-loader",
       "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "uvu",
+      "allowedCategories": [ "library" ]
     },
     {
       "name": "vite",
