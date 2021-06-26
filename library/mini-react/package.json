@@ -1,0 +1,21 @@
+{
+  "name": "mini-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "uvu -r esbuild-register/register tests"
+  },
+  "devDependencies": {
+    "@types/jsdom": "16.2.12",
+    "jsdom": "16.6.0",
+    "uvu": "0.5.1",
+    "react": "^17.0.0",
+    "esbuild-register": "2.6.0",
+    "@types/react": "^17.0.0",
+    "@types/node": "~15.12.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

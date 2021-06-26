@@ -416,6 +416,11 @@
       "packageName": "sentry-report",
       "projectFolder": "examples/sentry-report",
       "reviewCategory": "examples"
+    },
+    {
+      "packageName": "mini-react",
+      "projectFolder": "library/mini-react",
+      "reviewCategory": "library"
     }
     // {
     //   /**
