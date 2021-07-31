@@ -146,6 +146,15 @@ importers:
       typescript: ~4.2.4
       vlq: ~1.0.1
       vue: ^3.0.5
+  ../../library/lox:
+    dependencies:
+      '@types/node': 15.12.4
+      '@types/yargs': 17.0.2
+      yargs: 17.0.1
+    specifiers:
+      '@types/node': ~15.12.4
+      '@types/yargs': ~17.0.2
+      yargs: ~17.0.1
   ../../library/mini-react:
     devDependencies:
       '@types/jsdom': 16.2.12
@@ -3068,6 +3077,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-kQ5JNTrbDv3Rp5X2n/iUu37IJBDU2gsZ5R/g1/KHOOEc5IKfUFjXT6DENPGduh08I/pamwtEq4oul7gUqKTQDQ==
+  /@types/yargs/17.0.2:
+    dependencies:
+      '@types/yargs-parser': 20.2.0
+    dev: false
+    resolution:
+      integrity: sha512-JhZ+pNdKMfB0rXauaDlrIvm+U7V4m03PPOSVoPS66z8gf+G4Z/UW8UlrVIj2MRQOBzuoEvYtjS0bqYwnpZaS9Q==
   /@typescript-eslint/eslint-plugin/3.4.0_f1d0ee95feacb22808587906aa798d4b:
     dependencies:
       '@typescript-eslint/experimental-utils': 3.4.0_eslint@7.25.0+typescript@4.2.4
@@ -12581,6 +12596,20 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
+  /yargs/17.0.1:
+    dependencies:
+      cliui: 7.0.4
+      escalade: 3.1.1
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      string-width: 4.2.2
+      y18n: 5.0.8
+      yargs-parser: 20.2.4
+    dev: false
+    engines:
+      node: '>=12'
+    resolution:
+      integrity: sha512-xBBulfCc8Y6gLFcrPvtqKz9hz8SO0l1Ni8GgDekvBX2ro0HRQImDGnikfc33cgzcYUSncapnNcZDjVFIH3f6KQ==
   /yocto-queue/0.1.0:
     dev: false
     engines:

@@ -123,6 +123,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "@types/yargs",
+      "allowedCategories": [ "library" ]
+    },
+    {
       "name": "@typescript-eslint/eslint-plugin",
       "allowedCategories": [ "apps" ]
     },
@@ -305,6 +309,10 @@
     {
       "name": "vue-tsc",
       "allowedCategories": [ "apps" ]
+    },
+    {
+      "name": "yargs",
+      "allowedCategories": [ "library" ]
     }
   ]
 }
