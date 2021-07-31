@@ -235,6 +235,10 @@
       "allowedCategories": [ "apps" ]
     },
     {
+      "name": "solid-js",
+      "allowedCategories": [ "apps" ]
+    },
+    {
       "name": "source-map",
       "allowedCategories": [ "examples" ]
     },
@@ -281,6 +285,10 @@
     {
       "name": "vite",
       "allowedCategories": [ "apps", "examples" ]
+    },
+    {
+      "name": "vite-plugin-solid",
+      "allowedCategories": [ "apps" ]
     },
     {
       "name": "vitepress",
