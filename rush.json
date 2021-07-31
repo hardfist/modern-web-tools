@@ -421,6 +421,11 @@
       "packageName": "mini-react",
       "projectFolder": "library/mini-react",
       "reviewCategory": "library"
+    },
+    {
+      "packageName": "solid-app",
+      "projectFolder": "apps/solid-app",
+      "reviewCategory": "apps"
     }
     // {
     //   /**
