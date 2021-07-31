@@ -426,6 +426,11 @@
       "packageName": "solid-app",
       "projectFolder": "apps/solid-app",
       "reviewCategory": "apps"
+    },
+    {
+      "packageName": "lox",
+      "projectFolder": "library/lox",
+      "reviewCategory": "library"
     }
     // {
     //   /**
