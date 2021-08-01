@@ -28,7 +28,7 @@
     },
     {
       "name": "@hardfist/utils",
-      "allowedCategories": [ "apps" ]
+      "allowedCategories": [ "apps", "library" ]
     },
     {
       "name": "@mdx-js/react",
@@ -197,6 +197,10 @@
     {
       "name": "magic-string",
       "allowedCategories": [ "examples" ]
+    },
+    {
+      "name": "mimi-react",
+      "allowedCategories": [ "library" ]
     },
     {
       "name": "mocha",
