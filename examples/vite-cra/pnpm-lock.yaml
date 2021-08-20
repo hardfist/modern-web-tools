@@ -1,0 +1,15 @@
+lockfileVersion: 5.3
+
+specifiers:
+  esbuild: 0.12.9
+
+devDependencies:
+  esbuild: 0.12.9
+
+packages:
+
+  /esbuild/0.12.9:
+    resolution: {integrity: sha512-MWRhAbMOJ9RJygCrt778rz/qNYgA4ZVj6aXnNPxFjs7PmIpb0fuB9Gmg5uWrr6n++XKwwm/RmSz6RR5JL2Ocsw==}
+    hasBin: true
+    requiresBuild: true
+    dev: true

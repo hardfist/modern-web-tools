@@ -31,6 +31,10 @@
       "allowedCategories": [ "apps", "library" ]
     },
     {
+      "name": "@material-ui/core",
+      "allowedCategories": [ "apps" ]
+    },
+    {
       "name": "@mdx-js/react",
       "allowedCategories": [ "apps" ]
     },
@@ -147,6 +151,10 @@
       "allowedCategories": [ "apps", "examples" ]
     },
     {
+      "name": "antd",
+      "allowedCategories": [ "apps" ]
+    },
+    {
       "name": "ava",
       "allowedCategories": [ "library" ]
     },
@@ -192,7 +200,7 @@
     },
     {
       "name": "lodash",
-      "allowedCategories": [ "examples" ]
+      "allowedCategories": [ "apps", "examples" ]
     },
     {
       "name": "magic-string",
@@ -261,6 +269,10 @@
     {
       "name": "terser",
       "allowedCategories": [ "examples" ]
+    },
+    {
+      "name": "three",
+      "allowedCategories": [ "apps" ]
     },
     {
       "name": "ts-jest",
