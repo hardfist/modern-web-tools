@@ -431,6 +431,11 @@
       "packageName": "lox",
       "projectFolder": "library/lox",
       "reviewCategory": "library"
+    },
+    {
+      "packageName": "vite-cra",
+      "projectFolder": "examples/vite-cra",
+      "reviewCategory": "apps"
     }
     // {
     //   /**
