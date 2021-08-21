@@ -1,5 +1,5 @@
 import { defineConfig, Plugin, ResolvedConfig } from 'vite';
-import { viteEsbuildBundlePlugin } from './plugins/esbuild-bundle';
+import { viteEsbuildBundlePlugin } from 'vite-esbuild-bundle-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({

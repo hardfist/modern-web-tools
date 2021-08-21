@@ -1,12 +1,6 @@
-import { defineConfig, Plugin, ResolvedConfig } from 'vite';
+import type { Plugin, ResolvedConfig } from 'vite';
 import { build } from 'esbuild';
 import path from 'path';
-import { injectToHead } from './utils/html';
-export const externalRE = /^(https?:)?\/\//;
-export const isExternalUrl = (url: string): boolean => externalRE.test(url);
-function toPublicPath(filename: string, config: ResolvedConfig) {
-  return isExternalUrl(filename) ? filename : config.base + filename;
-}
 
 export function viteEsbuildBundlePlugin(): Plugin {
   let config: ResolvedConfig;
@@ -108,18 +102,17 @@ export function viteEsbuildBundlePlugin(): Plugin {
       }
     },
     async transformIndexHtml(html) {
-      const assetTags = [
+      return [
         // js entry chunk for this page
         {
           tag: 'script',
           attrs: {
             type: 'module',
             crossorigin: true,
-            src: toPublicPath(facadeChunks[0], config)
+            src: facadeChunks[0]
           }
         }
       ];
-      return injectToHead(html, assetTags);
     }
   } as Plugin;
 }
