@@ -436,6 +436,11 @@
       "packageName": "vite-cra",
       "projectFolder": "examples/vite-cra",
       "reviewCategory": "apps"
+    },
+    {
+      "packageName": "vite-esbuild-bundle-plugin",
+      "projectFolder": "library/esbuild-bundle-plugin",
+      "reviewCategory": "library"
     }
     // {
     //   /**
