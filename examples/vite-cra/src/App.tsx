@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import * as three from 'three';
-// import * as lodash from 'lodash';
-// import * as rx from 'rxjs';
-// import * as antd from 'antd';
-// import * as material from '@material-ui/core';
-// console.log('big lib', three, lodash, rx, antd);
+import * as three from 'three';
+import * as lodash from 'lodash';
+import * as rx from 'rxjs';
+import * as antd from 'antd';
+import * as material from '@material-ui/core';
+console.log('big lib', three, lodash, rx, antd);
 
 function App() {
   const [count, setCount] = useState(0);

@@ -95,6 +95,7 @@ export function viteEsbuildBundlePlugin(): Plugin {
       for (const output of result.outputFiles) {
         const fileName = path.relative('/', output.path);
         console.log('fileName:', fileName);
+        const formatedContent = output.text.replace('"__VITE_PRELOAD__"', 'void 0');
         /**
          * rollup not support emitChunk in generate bundle,which is hard to deal with
          * so we have to use transformIndexHtml to handle script injection
@@ -102,7 +103,7 @@ export function viteEsbuildBundlePlugin(): Plugin {
         this.emitFile({
           type: 'asset',
           fileName: fileName,
-          source: output.text
+          source: formatedContent
         });
       }
     },
