@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import * as three from 'three';
-import * as lodash from 'lodash';
-import * as rx from 'rxjs';
-import * as antd from 'antd';
-import * as material from '@material-ui/core';
-console.log('big lib', three, lodash, rx, antd);
+// import * as three from 'three';
+// import * as lodash from 'lodash';
+// import * as rx from 'rxjs';
+// import * as antd from 'antd';
+// import * as material from '@material-ui/core';
+// console.log('big lib', three, lodash, rx, antd);
 
 function App() {
   const [count, setCount] = useState(0);
-
+  useEffect(async () => {
+    const result = await import('./answer');
+    console.log('result:', result.answer);
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
