@@ -94,6 +94,7 @@ export function viteEsbuildBundlePlugin(): Plugin {
         /**
          * rollup not support emitChunk in generate bundle,which is hard to deal with
          * so we have to use transformIndexHtml to handle script injection
+         * see https://github.com/rollup/rollup/issues/4210
          */
         this.emitFile({
           type: 'asset',
