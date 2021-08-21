@@ -8,6 +8,7 @@ export function viteEsbuildBundlePlugin(): Plugin {
   return {
     name: 'vite:esbuild',
     enforce: 'pre',
+    apply: 'build',
     config(cfg) {
       return {
         build: {
