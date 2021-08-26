@@ -1,14 +1,14 @@
 //
-//  neoApp.swift
-//  Shared
+//  cs193App.swift
+//  cs193
 //
-//  Created by yj on 2021/8/22.
+//  Created by yj on 2021/8/26.
 //
 
 import SwiftUI
 
 @main
-struct neoApp: App {
+struct cs193App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
