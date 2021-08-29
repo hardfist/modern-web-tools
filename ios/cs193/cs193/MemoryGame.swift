@@ -6,22 +6,50 @@
 //
 
 import Foundation
-struct MemoryGame<CardContent> {
+struct MemoryGame<CardContent> where CardContent: Equatable {
     var cards: Array<Card>;
-    mutating func choose(card:Card){
-        print("\(card)")
-        let chooseIndex: Int = self.index(of: card);
-        self.cards[chooseIndex].isFaceUp = !self.cards[chooseIndex].isFaceUp;
-        let arr: Array<Int> = [5,1,2,3,4];
-        print(arr.greatest);
-    }
-    func index(of card:Card) -> Int{
-        for index in 0..<self.cards.count{
-            if self.cards[index].id == card.id {
-                return index;
+    var indexOfTheOneAndOnlyFaceUpCard: Int? {
+        get {
+            var faceupCardIndices = [Int]()
+            for index in cards.indices {
+                if cards[index].isFaceUp {
+                    faceupCardIndices.append(index);
+                }
+            }
+            if faceupCardIndices.count == 1 {
+                return faceupCardIndices.first;
+            }else {
+                return nil;
+            }
+            
+        }
+        set {
+            for index in cards.indices {
+                if index == newValue {
+                    cards[index].isFaceUp = true;
+                }else {
+                    cards[index].isFaceUp = false;
+                }
             }
         }
-        return 0;
+    }
+    mutating func choose(card:Card){
+        print("\(card)")
+        if let chooseIndex: Int = self.cards.firstIndex(matching: card) , !cards[chooseIndex].isFaceUp {
+            
+            if let potentialMatchIndex = indexOfTheOneAndOnlyFaceUpCard {
+                if cards[chooseIndex].content == cards[potentialMatchIndex].content {
+                    cards[chooseIndex].isMatched = true;
+                    cards[potentialMatchIndex].isMatched = true;
+                }
+            }else {
+                for index in cards.indices {
+                    cards[index].isFaceUp = false;
+                }
+                indexOfTheOneAndOnlyFaceUpCard = chooseIndex;
+            }
+            self.cards[chooseIndex].isFaceUp = true;
+        }
     }
     init(numberOfPairsOfCards:Int,cardContentFactory:(Int) -> CardContent){
         cards = Array<Card>();
@@ -32,7 +60,7 @@ struct MemoryGame<CardContent> {
         }
     }
     struct Card: Identifiable {
-        var isFaceUp: Bool = true
+        var isFaceUp: Bool = false
         var isMatched: Bool = false
         var content: CardContent;
         var id:Int;

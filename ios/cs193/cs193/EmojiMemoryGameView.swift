@@ -16,14 +16,17 @@ struct CardView: View {
     }
     func body(for size: CGSize) -> some View{
         ZStack{
-        if(card.isFaceUp){
-        
+            if(card.isMatched){
+                RoundedRectangle(cornerRadius: cornerRadius).fill(Color.blue);
+            }else {
+            if(card.isFaceUp ){
                 RoundedRectangle(cornerRadius:cornerRadius).fill(Color.white)
                 RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth:edgeLineWidth)
                 Text(card.content)
-        }else {
-            RoundedRectangle(cornerRadius: cornerRadius).fill();
-        }
+            }else {
+                RoundedRectangle(cornerRadius: cornerRadius).fill();
+            }
+            }
         }.font(Font.system(size: self.fontSize(for: size)))
     }
     let cornerRadius: CGFloat = 10.0;
@@ -36,13 +39,11 @@ struct CardView: View {
 struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame;
     var body: some View {
-        HStack{
-            ForEach(viewModel.cards){ card in
-                CardView(card: card).onTapGesture {
-                    self.viewModel.choose(card: card)
-                }
+        Grid(viewModel.cards){card in
+            CardView(card: card).onTapGesture {
+                self.viewModel.choose(card: card)
             }
-        }.foregroundColor(.orange).padding().font(.largeTitle)
+        }.foregroundColor(.orange).padding().font(.largeTitle).padding()
     }
 }
 
