@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 struct MemoryGame<CardContent> where CardContent: Equatable {
     var cards: Array<Card>;
     var indexOfTheOneAndOnlyFaceUpCard: Int? {
@@ -35,6 +36,9 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     }
     mutating func choose(card:Card){
         print("\(card)")
+        AF.request("https://httpbin.org/get").response { response in
+            debugPrint(response)
+        }
         if let chooseIndex: Int = self.cards.firstIndex(matching: card) , !cards[chooseIndex].isFaceUp {
             
             if let potentialMatchIndex = indexOfTheOneAndOnlyFaceUpCard {
